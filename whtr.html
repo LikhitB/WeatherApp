@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="whtr.css">
+    <style>
+        
+        span {
+            font-size: 10px;
+        }
+        h1{
+            margin-bottom:50px;
+            margin-top: 5px;
+            color: rgb(210, 175, 20);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather Application</h1>
+        <div class="inner_container">
+            <!-- Tabs -->
+            <div class="tabs_container">
+                <p class="tab1">Your weather</p>
+                <p class="tab2">Search Weather</p>
+            </div>
+            <!-- error image -->
+            <div class="error">
+                <img src="assets/not-found.png" alt="" width="250" height="250">
+            </div>
+            <!-- Acess -->
+            <div class="access_container">
+                <img src="assets/location.png" width="80" height="80">
+                <span>Permission to Grant Access</span>
+                <button class="grant_button">Grant Access</button>
+            </div>
+            <!-- Search -->
+            <div class="Search_bar">
+                <div class="animate">
+                    <input type="text" class="city_srch">
+                    <span class="spanner">PLACE</span>
+                </div>
+                <button><img src="assets/search.png" alt="" width="20" height="20" class="search_btn"></button>
+            </div>
+            <!-- Loading session -->
+            <div class="loading_container">
+                <img src="assets/loader.webp" width="100" height="100" class="load_gif">
+            </div>
+            <div class="weather_info_display">
+                <!-- location  -->
+                <div class="location">
+                    <p class="city"></p>
+                    <!-- <img src="" alt="" class="city_flag"> -->
+                </div>
+                <!-- Feels situation and temperature -->
+                <p class="Situation"></p>
+                <!-- <img src="" alt="" class="Data_IMG"> -->
+                <p class="temperature_data"></p>
+                <!-- ALL DATA 3 divs -->
+                <!-- wind  -->
+                <div class="inner_divs">
+                    <div class="Wind_data">
+                        <img src="assets/wind.png" alt="" height="80" width="80">
+                        <p class="windspeed">WINDSPEED</p>
+                        <p class="wind_speed_value"></p>
+                    </div>
+                    <!-- humidity  -->
+                    <div class="humidity_data">
+                        <img src="assets/humidity.png" alt="" height="80" width="80">
+                        <p class="Humidity%">HUMIDITY</p>
+                        <p class="humidity"></p>
+                    </div>
+                    <!-- cloud  -->
+                    <div class="cloud_data">
+                        <img src="assets/cloud.png" alt="" height="80" width="80">
+                        <p class="clouds">CLOUDS </p>
+                        <p class="cloud_value"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="wthr.js"></script>
+</body>
+
+</html>
